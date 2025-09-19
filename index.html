@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Nova - Official Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1518972559570-0b4d0e21dfc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.5rem;
+    }
+    header a {
+      margin-top: 20px;
+      background: #e60073;
+      padding: 15px 30px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header a:hover {
+      background: #ff3385;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #e60073;
+    }
+    .music iframe {
+      display: block;
+      margin: 0 auto;
+      border: none;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #1a1a1a;
+      padding: 30px;
+      text-align: center;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    footer a:hover {
+      color: #e60073;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DJ Nova</h1>
+    <p>Bringing the Beat to Your Night</p>
+    <a href="#booking">Book Now</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>DJ Nova is a high-energy performer specializing in electronic dance music, house, and hip-hop remixes. With performances at top clubs and festivals worldwide, Nova brings unforgettable vibes to every stage.</p>
+  </section>
+
+  <section id="music" class="music">
+    <h2>My Mixes</h2>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23e60073&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="DJ performing">
+      <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Club scene">
+      <img src="https://images.unsplash.com/photo-1526324969864-4dfc6c7b0c11?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Festival crowd">
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Booking</h2>
+    <p>Want to bring DJ Nova to your next event? Fill out the form below:</p>
+    <form>
+      <input type="text" placeholder="Your Name" required style="padding:10px; width:100%; margin:10px 0;">
+      <input type="email" placeholder="Your Email" required style="padding:10px; width:100%; margin:10px 0;">
+      <textarea placeholder="Event Details" required style="padding:10px; width:100%; margin:10px 0; height:100px;"></textarea>
+      <button type="submit" style="background:#e60073; color:white; padding:15px 30px; border:none; border-radius:30px; cursor:pointer;">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Follow me on social media</p>
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+  </footer>
+</body>
+</html>
